@@ -1,17 +1,21 @@
 package model;
 
-public class WeddingService {
+import java.math.BigDecimal;
+
+public class WeddingOffer {
     private Long id;
-    private String serviceName;
+    private String offerName;
+    private double offerPrice;
     private boolean isPrepared;
     private YoungCouple youngCouple;
 
-    public WeddingService() {
+    public WeddingOffer() {
     }
 
-    public WeddingService(long id, String serviceName) {
+    public WeddingOffer(long id, String offerName, double offerPrice) {
         this.id = id;
-        this.serviceName = serviceName;
+        this.offerName = offerName;
+        this.offerPrice = offerPrice;
         this.isPrepared = false;
         this.youngCouple = new YoungCouple();
     }
@@ -24,12 +28,20 @@ public class WeddingService {
         this.id = id;
     }
 
-    public String getServiceName() {
-        return serviceName;
+    public String getOfferName() {
+        return offerName;
     }
 
-    public void setServiceName(String serviceName) {
-        this.serviceName = serviceName;
+    public void setOfferName(String offerName) {
+        this.offerName = offerName;
+    }
+
+    public Double getOfferPrice() {
+        return offerPrice;
+    }
+
+    public void setOfferPrice(Double offerPrice) {
+        this.offerPrice = offerPrice;
     }
 
     public boolean isPrepared() {

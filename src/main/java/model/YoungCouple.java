@@ -2,17 +2,21 @@ package model;
 
 public class YoungCouple {
     private Long id;
-    private String firstName;
-    private String lastName;
+    private String firstNameM;
+    private String lastNameM;
+    private String firstNameF;
+    private String lastNameF;
     private boolean isActive;
 
     public YoungCouple() {
     }
 
-    public YoungCouple(Long id, String firstName, String lastName, boolean isActive) {
+    public YoungCouple(Long id, String firstNameM, String lastNameM, String firstNameF, String lastNameF, boolean isActive) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.firstNameM = firstNameM;
+        this.lastNameM = lastNameM;
+        this.firstNameF = firstNameF;
+        this.lastNameF = lastNameF;
         this.isActive = isActive;
     }
 
@@ -24,20 +28,36 @@ public class YoungCouple {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFirstNameM() {
+        return firstNameM;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstNameM(String firstNameM) {
+        this.firstNameM = firstNameM;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLastNameM() {
+        return lastNameM;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastNameM(String lastNameM) {
+        this.lastNameM = lastNameM;
+    }
+
+    public String getFirstNameF() {
+        return firstNameF;
+    }
+
+    public void setFirstNameF(String firstNameF) {
+        this.firstNameF = firstNameF;
+    }
+
+    public String getLastNameF() {
+        return lastNameF;
+    }
+
+    public void setLastNameF(String lastNameF) {
+        this.lastNameF = lastNameF;
     }
 
     public boolean isActive() {
