@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 public class ListOfOfferRepo {
+
     private static ListOfOfferRepo ourInstance = new ListOfOfferRepo();
 
     public static ListOfOfferRepo getInstance() {
@@ -30,10 +31,12 @@ public class ListOfOfferRepo {
 
 
     public Optional<WeddingOffer> getObjectById(Long id) {
+
         return listOfOffers.stream().filter(u -> u.getId().equals(id)).findFirst();
     }
 
     public boolean isPressentInRepoById(final Long id) {
+
         return listOfOffers.stream().anyMatch(u -> u.getId().equals(id));
     }
 }

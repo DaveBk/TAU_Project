@@ -1,6 +1,0 @@
-model\WeddingOffer.class
-Main.class
-model\ListOfOffer.class
-model\YoungCouple.class
-repository\ListOfOfferRepo.class
-service\ListOfOfferService.class

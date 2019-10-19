@@ -1,22 +1,34 @@
 package model;
 
 public class YoungCouple {
+
     private Long id;
+
     private String firstNameM;
+
     private String lastNameM;
+
     private String firstNameF;
+
     private String lastNameF;
+
     private boolean isActive;
 
     public YoungCouple() {
     }
 
     public YoungCouple(Long id, String firstNameM, String lastNameM, String firstNameF, String lastNameF, boolean isActive) {
+
         this.id = id;
+
         this.firstNameM = firstNameM;
+
         this.lastNameM = lastNameM;
+
         this.firstNameF = firstNameF;
+
         this.lastNameF = lastNameF;
+
         this.isActive = isActive;
     }
 

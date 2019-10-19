@@ -3,20 +3,30 @@ package model;
 import java.math.BigDecimal;
 
 public class WeddingOffer {
+
     private Long id;
+
     private String offerName;
+
     private double offerPrice;
+
     private boolean isPrepared;
+
     private YoungCouple youngCouple;
 
     public WeddingOffer() {
     }
 
     public WeddingOffer(long id, String offerName, double offerPrice) {
+
         this.id = id;
+
         this.offerName = offerName;
+
         this.offerPrice = offerPrice;
+
         this.isPrepared = false;
+
         this.youngCouple = new YoungCouple();
     }
 

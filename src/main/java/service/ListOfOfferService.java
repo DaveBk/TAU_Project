@@ -16,6 +16,7 @@ public class ListOfOfferService {
 
 
     public boolean addOfferToList(WeddingOffer offer) {
+
         if (offer == null) throw new IllegalArgumentException("Object is null");
 
         ListOfOfferRepo.getInstance().collectionAccess().add(offer);
@@ -23,6 +24,7 @@ public class ListOfOfferService {
     }
 
     public WeddingOffer getOfferById(long id) {
+
         if (ListOfOfferRepo.getInstance().isPressentInRepoById(id)) {
 
             Optional<WeddingOffer> optionalWeddingOffer = ListOfOfferRepo.getInstance().getObjectById(id);
@@ -35,6 +37,7 @@ public class ListOfOfferService {
     }
 
     public boolean deleteOfferById(long id) {
+
         if (ListOfOfferRepo.getInstance().isPressentInRepoById(id)) {
             ListOfOfferRepo.getInstance().collectionAccess().remove(getOfferById(id));
             return true;
@@ -45,12 +48,16 @@ public class ListOfOfferService {
     public List<WeddingOffer> getAllWeddingOffers() { return new ArrayList<>(ListOfOfferRepo.getInstance().collectionAccess()); }
 
     public WeddingOffer updateWeddingOffer(long id, WeddingOffer offer){
+
         if (ListOfOfferRepo.getInstance().isPressentInRepoById(id)) {
             WeddingOffer offerToUpdate = getOfferById(id);
 
             offerToUpdate.setOfferName(offer.getOfferName());
+
             offerToUpdate.setPrepared(offer.isPrepared());
+
             offerToUpdate.setOfferPrice(offer.getOfferPrice());
+
             offerToUpdate.setYoungCouple(offer.getYoungCouple());
 
             ListOfOfferRepo.getInstance().collectionAccess().remove(getOfferById(id));
