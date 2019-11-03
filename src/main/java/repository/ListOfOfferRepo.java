@@ -2,6 +2,7 @@ package repository;
 
 import model.WeddingOffer;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -20,7 +21,13 @@ public class ListOfOfferRepo {
     private List<WeddingOffer> listOfOffers = new ArrayList<>();
 
 
-    public List<WeddingOffer> collectionAccess() { return listOfOffers; }
+    public List<WeddingOffer> collectionAccess() {
+        listOfOffers
+                .stream()
+                .filter(WeddingOffer::isSaveTimes)
+                .forEach(u -> u.setLastReadTime(LocalDateTime.now()));
+        return listOfOffers;
+    }
 
     public void setListOfOffers(List<WeddingOffer> listOfOffers) {
         this.listOfOffers = listOfOffers;

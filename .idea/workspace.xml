@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c13d03ed-e41a-472e-8390-e31304a84319" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/WeddingOfferTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/WeddingOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/WeddingOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/service/ListOfOfferServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/ListOfOfferServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ListOfOfferRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ListOfOfferRepo.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +62,7 @@
       <updated>1570354415519</updated>
       <workItem from="1571505100062" duration="14306000" />
       <workItem from="1572775648058" duration="2721000" />
-      <workItem from="1572783744134" duration="1055000" />
+      <workItem from="1572783744134" duration="2252000" />
     </task>
     <servers />
   </component>
@@ -88,5 +86,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
