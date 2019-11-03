@@ -2,8 +2,10 @@ package service;
 
 
 import model.WeddingOffer;
+import model.WeddingOfferTime;
 import repository.ListOfOfferRepo;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -29,7 +31,11 @@ public class ListOfOfferService {
 
             Optional<WeddingOffer> optionalWeddingOffer = ListOfOfferRepo.getInstance().getObjectById(id);
             if (optionalWeddingOffer.isPresent()) {
-                return optionalWeddingOffer.get();
+                WeddingOffer weddingOffer = optionalWeddingOffer.get();
+                if (weddingOffer.isSaveTimes()){
+                    weddingOffer.setLastReadTime(LocalDateTime.now());
+                }
+                return weddingOffer;
             }
         }
 
@@ -60,12 +66,24 @@ public class ListOfOfferService {
 
             offerToUpdate.setYoungCouple(offer.getYoungCouple());
 
+            offerToUpdate.setSaveTimes(offer.isSaveTimes());
+
+            if (offer.isSaveTimes()) {
+                offerToUpdate.setUpdatedTime(LocalDateTime.now());
+                offerToUpdate.setLastReadTime(offer.getLastReadTime());
+            }
+
             ListOfOfferRepo.getInstance().collectionAccess().remove(getOfferById(id));
             ListOfOfferRepo.getInstance().collectionAccess().add(offerToUpdate);
+
 
             return offerToUpdate;
         }
 
         throw new NoSuchElementException("Element with pointed id doesnt exist");
     }
+    public WeddingOfferTime getTimesById(long id) {
+        return new WeddingOfferTime().create(getOfferById(id));
+    }
+
 }

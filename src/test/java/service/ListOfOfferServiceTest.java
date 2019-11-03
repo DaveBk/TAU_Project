@@ -115,6 +115,8 @@ public class ListOfOfferServiceTest {
 
     }
 
+
+
     @After
     public void clear() {
         repository.setListOfOffers(new ArrayList<>());
