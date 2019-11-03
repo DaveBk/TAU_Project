@@ -20,9 +20,7 @@ public class ListOfOfferRepo {
     private List<WeddingOffer> listOfOffers = new ArrayList<>();
 
 
-    public List<WeddingOffer> collectionAccess() {
-        return listOfOffers;
-    }
+    public List<WeddingOffer> collectionAccess() { return listOfOffers; }
 
     public void setListOfOffers(List<WeddingOffer> listOfOffers) {
         this.listOfOffers = listOfOffers;

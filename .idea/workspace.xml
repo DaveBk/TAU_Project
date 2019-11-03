@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c13d03ed-e41a-472e-8390-e31304a84319" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/WeddingOfferTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ListOfOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ListOfOffer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/WeddingOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/WeddingOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/YoungCouple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/YoungCouple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ListOfOfferRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ListOfOfferRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ListOfOfferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ListOfOfferService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/service/ListOfOfferServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/ListOfOfferServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/ListOfOffer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/WeddingOffer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/YoungCouple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/ListOfOfferRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/ListOfOfferService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rejestrSamochodow-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-service.ListOfOfferServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/service.ListOfOfferServiceTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/service/ListOfOfferServiceTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +30,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -67,55 +52,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="WeddingHouse" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="WeddingHouse" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -126,7 +62,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570354415519</updated>
-      <workItem from="1571505100062" duration="13397000" />
+      <workItem from="1571505100062" duration="14306000" />
+      <workItem from="1572775648058" duration="2721000" />
+      <workItem from="1572783744134" duration="1055000" />
     </task>
     <servers />
   </component>

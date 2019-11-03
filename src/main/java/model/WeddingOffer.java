@@ -1,6 +1,7 @@
 package model;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 public class WeddingOffer {
 
@@ -13,6 +14,12 @@ public class WeddingOffer {
     private boolean isPrepared;
 
     private YoungCouple youngCouple;
+
+    private LocalDateTime creationTime;
+    private LocalDateTime updatedTime;
+    private LocalDateTime lastReadTime;
+
+    private boolean saveTimes;
 
     public WeddingOffer() {
     }
@@ -28,6 +35,10 @@ public class WeddingOffer {
         this.isPrepared = false;
 
         this.youngCouple = new YoungCouple();
+
+        this.creationTime = LocalDateTime.now();
+        this.updatedTime = LocalDateTime.now();
+        this.saveTimes = true;
     }
 
     public Long getId() {
@@ -68,5 +79,37 @@ public class WeddingOffer {
 
     public void setYoungCouple(YoungCouple youngCouple) {
         this.youngCouple = youngCouple;
+    }
+
+    public LocalDateTime getCreationTime() {
+        return creationTime;
+    }
+
+    public void setCreationTime(LocalDateTime creationTime) {
+        this.creationTime = creationTime;
+    }
+
+    public LocalDateTime getUpdatedTime() {
+        return updatedTime;
+    }
+
+    public void setUpdatedTime(LocalDateTime updatedTime) {
+        this.updatedTime = updatedTime;
+    }
+
+    public LocalDateTime getLastReadTime() {
+        return lastReadTime;
+    }
+
+    public void setLastReadTime(LocalDateTime lastReadTime) {
+        this.lastReadTime = lastReadTime;
+    }
+
+    public boolean isSaveTimes() {
+        return saveTimes;
+    }
+
+    public void setSaveTimes(boolean saveTimes) {
+        this.saveTimes = saveTimes;
     }
 }

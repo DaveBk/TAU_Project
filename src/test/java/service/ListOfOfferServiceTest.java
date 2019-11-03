@@ -101,9 +101,8 @@ public class ListOfOfferServiceTest {
         listOfOfferService.updateWeddingOffer(1, offer);
 
         Assert.assertEquals(offerToUpdate.getOfferName(), offer.getOfferName());
-
         Assert.assertEquals(offerToUpdate.isPrepared(), offer.isPrepared());
-        
+
     }
 
     @Test(expected = NoSuchElementException.class)
