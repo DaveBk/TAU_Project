@@ -1,16 +1,32 @@
 package service;
 
 import model.WeddingOffer;
+import model.WeddingOfferTime;
 import model.YoungCouple;
 import org.junit.*;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.runners.MockitoJUnitRunner;
+import repository.ListOfOfferFactory;
 import repository.ListOfOfferRepo;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+import static org.mockito.Mockito.when;
+
+@RunWith(MockitoJUnitRunner.class)
 public class ListOfOfferServiceTest {
 
+    @Mock
+    private WeddingOfferTime weddingOfferTimeMock;
+    @Mock
+    private ListOfOfferService listOfOfferServiceMock;
+    @Mock
+    private WeddingOffer offerMock;
 
     private ListOfOfferRepo repository = ListOfOfferRepo.getInstance();
 
@@ -115,7 +131,52 @@ public class ListOfOfferServiceTest {
 
     }
 
+    @Test
+    public void readDataOnGetObject_correct_case() {
+        LocalDateTime time = LocalDateTime.now();
+        when(listOfOfferServiceMock.getOfferById(1)).thenReturn(offerMock);
+        when(listOfOfferServiceMock.getOfferById(1).getLastReadTime()).thenReturn(time);
 
+        Assert.assertEquals(listOfOfferServiceMock.getOfferById(1).getLastReadTime(), time);
+    }
+
+    @Test
+    public void addedDateDuringAddToCollection_correct_case() {
+        listOfOfferService.addOfferToList(ListOfOfferFactory.create(43, "Fajerwerki", 2500));
+        LocalDateTime time = LocalDateTime.now();
+
+        when(listOfOfferServiceMock.getOfferById(55)).thenReturn(offerMock);
+
+        when(listOfOfferServiceMock.getOfferById(55).getLastReadTime()).thenReturn(time);
+        Assert.assertEquals(listOfOfferServiceMock.getOfferById(55).getLastReadTime(), time);
+    }
+
+    @Test
+    public void updatedDateDuringUpdateObject_correct_case() {
+        LocalDateTime time = LocalDateTime.now();
+        when(weddingOfferTimeMock.getUpdatedTime()).thenReturn(time);
+
+        WeddingOffer offer = listOfOfferService.updateWeddingOffer(1, listOfOfferService.getOfferById(2));
+        Mockito.timeout(300);
+        Assert.assertEquals(weddingOfferTimeMock.getUpdatedTime(), time);
+    }
+
+    @Test
+    public void getTimesByTaskId() {
+        Assert.assertNotNull(listOfOfferService.getTimesById(1));
+    }
+
+    @Test
+    public void setTimesSaveToFalse_correct_case() {
+        WeddingOffer offerWithFalse = repository.collectionAccess().get(1);
+        offerWithFalse.setSaveTimes(false);
+        listOfOfferService.updateWeddingOffer(offerWithFalse.getId(), offerWithFalse);
+        Mockito.timeout(300);
+
+        List<WeddingOffer> allWeddingOffers = listOfOfferService.getAllWeddingOffers();
+        Assert.assertTrue(allWeddingOffers.stream().anyMatch(u -> u.getLastReadTime() != offerWithFalse.getLastReadTime()));
+        Assert.assertEquals(1, allWeddingOffers.stream().filter(u -> u.getLastReadTime() == offerWithFalse.getLastReadTime()).count());
+    }
 
     @After
     public void clear() {

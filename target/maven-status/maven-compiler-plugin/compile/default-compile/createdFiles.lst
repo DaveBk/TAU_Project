@@ -1,0 +1,8 @@
+model\WeddingOffer.class
+Main.class
+model\YoungCouple.class
+model\WeddingOfferTime.class
+repository\ListOfOfferRepo.class
+service\ListOfOfferService.class
+model\ListOfOffer.class
+repository\ListOfOfferFactory.class
