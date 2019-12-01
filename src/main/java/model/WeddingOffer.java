@@ -112,4 +112,20 @@ public class WeddingOffer {
     public void setSaveTimes(boolean saveTimes) {
         this.saveTimes = saveTimes;
     }
+
+    @Override
+    public String toString() {
+        return "TodoTask{" +
+                "id=" + id +
+                ", offerName='" + offerName + '\'' +
+                ", offerPrice='" + offerPrice + '\'' +
+                ", isPrepared=" + isPrepared +
+                ", creationTime=" + creationTime +
+                ", updatedTime=" + updatedTime +
+                ", lastReadTime=" + lastReadTime +
+                ", youngCouple=" + youngCouple +
+                ", saveTimes=" + saveTimes +
+                '}';
+    }
+
 }

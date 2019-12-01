@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class ListOfOfferService {
 
@@ -84,6 +85,30 @@ public class ListOfOfferService {
     }
     public WeddingOfferTime getTimesById(long id) {
         return new WeddingOfferTime().create(getOfferById(id));
+    }
+
+    public List<WeddingOffer> getOffersByRegex(String regex) {
+        if(regex == null){
+            throw new IllegalArgumentException("regex can not by null");
+        }
+
+        return ListOfOfferRepo.getInstance().collectionAccess().stream()
+                .filter(u -> u.getOfferName().contains(regex))
+                .collect(Collectors.toList());
+    }
+
+    public boolean deleteOffersByRegex(String regex) {
+        if(regex == null){
+            throw new IllegalArgumentException("regex can not by null");
+        }
+
+        List<WeddingOffer> offersToRemove = getOffersByRegex(regex);
+        if(offersToRemove.size() == 0) {
+            return false;
+        }
+
+        offersToRemove.forEach(u -> deleteOfferById(u.getId()));
+        return true;
     }
 
 }

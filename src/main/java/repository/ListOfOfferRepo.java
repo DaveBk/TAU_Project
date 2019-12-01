@@ -37,7 +37,9 @@ public class ListOfOfferRepo {
 
     public Optional<WeddingOffer> getObjectById(Long id) {
 
-        return listOfOffers.stream().filter(u -> u.getId().equals(id)).findFirst();
+        return listOfOffers.stream()
+                .filter(u -> u.getId().equals(id))
+                .findFirst();
     }
 
     public boolean isPressentInRepoById(final Long id) {

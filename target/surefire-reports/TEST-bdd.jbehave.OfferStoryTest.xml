@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="13" failures="0" name="service.ListOfOfferServiceTest" time="0.032" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="bdd.jbehave.OfferStoryTest" time="0.832" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="12.0.2+10"/>
@@ -63,17 +63,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="service.ListOfOfferServiceTest" name="setTimesSaveToFalse_correct_case" time="0.016"/>
-  <testcase classname="service.ListOfOfferServiceTest" name="getTimesByTaskId" time="0"/>
-  <testcase classname="service.ListOfOfferServiceTest" name="deleteOfferById_correct_case" time="0"/>
-  <testcase classname="service.ListOfOfferServiceTest" name="addedDateDuringAddToCollection_correct_case" time="0"/>
-  <testcase classname="service.ListOfOfferServiceTest" name="updateWeddingOffer_NoSuchElementException_expected" time="0"/>
-  <testcase classname="service.ListOfOfferServiceTest" name="updateWeddingOffer_correct_case" time="0"/>
-  <testcase classname="service.ListOfOfferServiceTest" name="readDataOnGetObject_correct_case" time="0"/>
-  <testcase classname="service.ListOfOfferServiceTest" name="getOfferById_correct_case" time="0"/>
-  <testcase classname="service.ListOfOfferServiceTest" name="getAllWeddingOffers_correct_case" time="0"/>
-  <testcase classname="service.ListOfOfferServiceTest" name="addOfferToList_correct_case" time="0.016"/>
-  <testcase classname="service.ListOfOfferServiceTest" name="getOfferById_NoSuchElementException_expected" time="0"/>
-  <testcase classname="service.ListOfOfferServiceTest" name="deleteOfferById_no_element_to_delete" time="0"/>
-  <testcase classname="service.ListOfOfferServiceTest" name="updatedDateDuringUpdateObject_correct_case" time="0"/>
+  <testcase classname="bdd.jbehave.OfferStoryTest" name="run" time="0.832"/>
 </testsuite>

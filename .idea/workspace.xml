@@ -2,11 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c13d03ed-e41a-472e-8390-e31304a84319" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/ListOfOfferFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/jbehave/JUnitStoryBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/jbehave/OfferCreationSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bdd/jbehave/OfferStoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/bdd/jbehave/offer_story_test.story" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeddingHouse.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WeddingHouse.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/service/ListOfOfferServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/ListOfOfferServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/WeddingOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/WeddingOffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ListOfOfferRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ListOfOfferRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ListOfOfferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ListOfOfferService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/WeddingOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/WeddingOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/ListOfOfferRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/ListOfOfferRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/ListOfOfferService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ListOfOfferService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/rejestrSamochodow-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-service.ListOfOfferServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-service.ListOfOfferServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/service.ListOfOfferServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/service.ListOfOfferServiceTest.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JBehave Story" />
       </list>
     </option>
   </component>
@@ -31,14 +46,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Daiv\Documents\PJWSTK\PJWSTK VII\TAU\TAU_Project\src\test\resources\jbehave.BDD" />
+      <recent name="C:\Users\Daiv\Documents\PJWSTK\PJWSTK VII\TAU\TAU_Project\src\test\java\jbehave\BDD" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Daiv\Documents\PJWSTK\PJWSTK VII\TAU\TAU_Project\src\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -65,7 +88,12 @@
       <updated>1570354415519</updated>
       <workItem from="1571505100062" duration="14306000" />
       <workItem from="1572775648058" duration="2721000" />
-      <workItem from="1572783744134" duration="7155000" />
+      <workItem from="1572783744134" duration="7487000" />
+      <workItem from="1572890684114" duration="2660000" />
+      <workItem from="1575197114662" duration="6771000" />
+      <workItem from="1575204124320" duration="25000" />
+      <workItem from="1575204387126" duration="2254000" />
+      <workItem from="1575206678541" duration="1667000" />
     </task>
     <servers />
   </component>
