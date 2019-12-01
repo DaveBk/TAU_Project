@@ -1,15 +1,16 @@
 package service;
 
-import model.WeddingOffer;
-import model.WeddingOfferTime;
-import model.YoungCouple;
+import pl.pjwstk.model.WeddingOffer;
+import pl.pjwstk.model.WeddingOfferTime;
+import pl.pjwstk.model.YoungCouple;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
-import repository.ListOfOfferFactory;
-import repository.ListOfOfferRepo;
+import pl.pjwstk.repository.ListOfOfferFactory;
+import pl.pjwstk.repository.ListOfOfferRepo;
+import pl.pjwstk.service.ListOfOfferService;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

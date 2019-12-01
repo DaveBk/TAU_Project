@@ -1,18 +1,18 @@
 package bdd.jbehave;
 
-import model.WeddingOffer;
-import model.YoungCouple;
+import org.junit.Assert;
+import pl.pjwstk.model.WeddingOffer;
+import pl.pjwstk.model.YoungCouple;
 import org.hamcrest.MatcherAssert;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
-import repository.ListOfOfferRepo;
-import service.ListOfOfferService;
+import pl.pjwstk.repository.ListOfOfferRepo;
+import pl.pjwstk.service.ListOfOfferService;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class OfferCreationSteps {
@@ -73,7 +73,7 @@ public class OfferCreationSteps {
     @Then("user get all offers with $regex ")
     public void offersByRegexCorrect(String regex) {
         MatcherAssert.assertThat(WeddingOffers.size(), equalTo(1));
-        MatcherAssert.assertThat(WeddingOffers.get(1).getOfferName(), containsString(regex) );
+        Assert.assertTrue(WeddingOffers.get(1).getOfferName().contains(regex));
     }
 
     @Given("inits offers list")
