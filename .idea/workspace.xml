@@ -2,59 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c13d03ed-e41a-472e-8390-e31304a84319" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pjwstk/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/pjwstk/controller/OfferController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/SeleniumTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeddingHouse.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WeddingHouse.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ListOfOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pjwstk/model/ListOfOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/WeddingOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pjwstk/model/WeddingOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/WeddingOfferTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pjwstk/model/WeddingOfferTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/YoungCouple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pjwstk/model/YoungCouple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ListOfOfferFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pjwstk/repository/ListOfOfferFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ListOfOfferRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pjwstk/repository/ListOfOfferRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ListOfOfferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/pjwstk/service/ListOfOfferService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bdd/jbehave/OfferCreationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bdd/jbehave/OfferCreationSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/service/ListOfOfferServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/ListOfOfferServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/ListOfOffer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/WeddingOffer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/WeddingOfferTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/YoungCouple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/ListOfOfferFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/ListOfOfferRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/ListOfOfferService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.stats" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.stats" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/bdd.jbehave.offer_story_test.stats" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/bdd.jbehave.offer_story_test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.txt.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.txt.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/bdd.jbehave.offer_story_test.stats.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/bdd.jbehave.offer_story_test.txt.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-bdd.jbehave.OfferStoryTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-service.ListOfOfferServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bdd.jbehave.OfferStoryTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/service.ListOfOfferServiceTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bdd/jbehave/JUnitStoryBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bdd/jbehave/OfferCreationSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bdd/jbehave/OfferStoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bdd/jbehave/offer_story_test.story" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/service/ListOfOfferServiceTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +67,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SeleniumTests">
+    <configuration name="SeleniumTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WeddingHouse" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.SeleniumTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="WeddingHouse" />
       <extension name="coverage">
@@ -131,6 +98,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SeleniumTests" />
         <item itemvalue="Spring Boot.Application" />
       </list>
     </recent_temporary>
